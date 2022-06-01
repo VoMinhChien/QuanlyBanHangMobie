@@ -1,0 +1,63 @@
+﻿@model demo.Models.KhachHang
+
+<div>
+    @Html.Raw(TempData["alert"])
+</div>
+<style>
+    .form-control{
+        width:400px;
+    }
+    .text-center{
+        text-align:center;
+        background-color:pink;
+    width:800px;
+    height:50px;
+    }
+    .main-banner {
+    position: relative;
+   
+}
+.ngoai{
+    margin-left:30%;
+}
+h1{
+    text-align:center
+}
+
+.main-banner{
+    background-color:yellow;
+    width:800px;
+    height:400px;
+    margin-top:-50px;
+}
+
+</style>
+<div class="ngoai">  
+<div class="text-center">
+    <button>  @Html.ActionLink("Trang Chủ","giaodien","Dn")</button>
+    <button>@Html.ActionLink("Đăng Ký","DangKy","Dn")</button>
+</div>
+<div class="main-banner">
+     
+
+<form 
+      style="width: 500px; margin-inline: auto;"
+      asp-controller="DN" asp-action="DangNhap"
+      method="post" enctype="multipart/form-data">
+    <h1>Đăng nhập</h1>
+    
+    <div class="form-group">
+        <label asp-for="Email">Email</label><br /><br />
+        <input type="email" class="form-control" asp-for="Email" autofocus>
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <br />
+    <div class="form-group">
+        <label asp-for="MatKhau">Mật khẩu</label><br /><br />
+        <input type="MatKhau" class="form-control" asp-for="MatKhau">
+        <span asp-validation-for="MatKhau" class="text-danger"></span>
+    </div>
+    <br /><br />
+    <button type="submit" class="btn btn-primary">Đăng nhập</button>
+</form>
+</div></div>

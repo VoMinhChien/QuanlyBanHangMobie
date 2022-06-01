@@ -1,0 +1,20 @@
+﻿body {
+}
+button.them{
+    background-color:greenyellow;
+}
+button.xoa {
+    background-color: #FF0000;
+}
+button.sua {
+   
+    background-color: #00FFFF;
+}
+button.chitiet {
+    background-color: gray;
+    width:99px;
+    
+}
+
+
+

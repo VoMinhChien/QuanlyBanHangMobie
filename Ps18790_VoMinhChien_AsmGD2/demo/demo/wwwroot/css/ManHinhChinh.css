@@ -1,0 +1,285 @@
+﻿
+header {
+    z-index: 999999999;
+    padding: 10px 20px;
+    width: 100%;
+    /*height: 150px;*/
+    /*background-size: 100% 100%;*/
+    border-radius: 2px;
+    background-color: #2c3e50;
+    /*margin-top:-20px;*/
+    position: sticky;
+    top: 0;
+}
+
+.header-top {
+    /*display: none;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+#menudangky {
+    /*position: absolute;*/
+    /*margin-top: 20px;*/
+    right: 1px;
+    text-shadow: 0 0 2px red;
+    text-decoration: none;
+    background-color:antiquewhite;
+    border-radius:4px;
+    /*height:60px;*/
+
+}
+
+#menudangky > a {
+    
+    color: fuchsia;
+    font-size: 25px;
+    /*background-color: rgb(243, 202, 114);*/
+}
+
+#menudangky > a:hover {
+    color: rgb(207, 14, 14);
+}
+
+   #menudangky > button {
+       border-radius: 7px;
+       height: 70px;
+       background-color: turquoise;
+
+       
+   }
+
+   #menudangky > ul > li > a:hover {
+       color: rgb(160, 12, 12);
+   }
+
+div.thongtin {
+    margin: 0px;
+  padding-top:100px;
+    border-radius: 0 0 5px ;
+    list-style: none;
+}
+
+
+.hmenu {
+    margin: 0px;
+    padding: 0px;
+    border-radius: 0 0 5px;
+    list-style: none;
+    background-color: #2c3e50;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+h1 {
+    font-family:'Sitka Display';
+    color: blue;
+    /*margin-top: 600px;*/
+    /*margin-left: 50px;*/
+}
+
+chu {
+    margin-top: 200px;
+}
+
+h1 em {
+   
+    font-style: normal;
+    color: red;
+}
+
+ul.hmenu > li > a {
+    display: block;
+    line-height: 40px;
+    text-decoration: none;
+    font-variant: small-caps;
+    color: white;
+    font-size: 25px;
+    font-style:italic;
+    font-weight:bold;
+}
+
+    ul.hmenu > li > a:hover {
+        color: rgb(255, 72, 0);
+        font-weight: bolder;
+        
+    }
+
+ul.hmenu > li:hover > .sub-menu {
+    display: block;
+   
+}
+
+ul.hmenu > li {
+    float: left;
+    margin: 0 5px;
+    position: relative;
+}
+
+.sub-menu {
+    z-index: 3;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px red;
+    list-style: none;
+    width: 150px;
+    position: absolute;
+    display: none;
+    background: white;
+}
+
+    .sub-menu > li > a {
+        display: block;
+        line-height: 30px;
+        border-bottom: 1px dotted orangered;
+        text-decoration: none;
+        font-variant: small-caps;
+        padding-left: 60px;
+        color: black;
+        background-color: #D8D8D8;
+    }
+
+        .sub-menu > li > a:hover {
+            color: red;
+            font-weight: bolder;
+            background-color:aquamarine;
+        }
+
+footer {
+    width: 100%;
+    line-height: 100px;
+    background-color: #336633;
+    box-shadow: 1px 2px 3px tomato;
+    clear: both;
+    text-align: center;
+}
+
+article {
+    /*width: 1275px;*/
+    /*background-color: whitesmoke;*/
+    min-height: auto;
+    /*padding: 2px;*/
+    /*float: right;*/
+    list-style: none;
+    margin-left: 218px;
+}
+
+.poster {
+    margin-left: -200px;
+}
+
+.container-ef {
+    display: flex;
+    justify-content: center;
+    
+    max-width: 1900px;
+    height: 50px;
+    margin: 0 auto;
+    align-items: center;
+    /*margin-top: -20px;*/
+    /*margin-left:-150px;*/
+}
+
+.text {
+    /*margin-top: 50px;*/
+    position: relative;
+    font-size: 2em;
+    background: #2c3e50;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    font-weight: bold;
+    padding: 5px;
+    box-shadow: 0 0 10px aqua;
+    width: 100%;
+    text-align: center;
+}
+
+    .text span {
+        color: #fff;
+        mix-blend-mode: difference;
+        font-style:italic;
+
+    }
+
+aside {
+    line-height: 100px;
+    width: 218px;
+    background-color: #2c3e50;
+    min-height: 720px;
+    max-height: auto;
+    /*padding: 2px;*/
+    position: fixed;
+    /*display: block*/
+}
+
+.chuchay {
+    /*margin-top: -80px;*/
+}
+
+.text:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    width: 60px;
+    height: 100%;
+    background: red;
+    animation: thangcover 4s linear infinite;
+}
+
+@keyframes thangcover {
+    0% {
+        left: 0;
+    }
+
+    50% {
+        left: calc( 100% - 60px);
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+.hd {
+    color: darkturquoise;
+}
+
+b {
+    margin-top: -200px;
+}
+
+
+/*div.thongtin {
+    margin: 0px;
+    padding: 0px;
+    border-radius: 0 0 5px;
+   
+}*/
+
+.thongtin ul li a {
+    display: block;
+    line-height: 40px;
+    border-bottom: 1px dotted red;
+    text-decoration: none;
+    font-variant: small-caps;
+    color: #99CCFF;
+    padding-left: 30px;
+}
+.thongtin ul li {
+    list-style-type: none !important;
+}
+
+    .thongtin ul li a:hover {
+        font-weight: bolder;
+        color: rgb(228, 32, 6);
+    }
+.search-bar{
+    
+    margin-left:600px;
+}

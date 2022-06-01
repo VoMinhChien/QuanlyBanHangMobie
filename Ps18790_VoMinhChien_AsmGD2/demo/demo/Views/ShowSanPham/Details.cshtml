@@ -1,0 +1,19 @@
+﻿@using demo.Models
+
+@{
+    Layout="_layout";
+}
+@{
+    //ViewData["Title"] = "Privacy Policy";
+    var currentProduct = ViewBag.currentProduct as SanPham;
+}
+<div style ="text-align:center">
+    <a asp-controller="home" asp-action="index" class="btn btn-primary my-4">Trang chủ</a>
+
+<h1>@currentProduct.TenSanPham</h1>
+<img src="~/Images/@currentProduct.HinhAnh" width="300"/>
+<div style="text-align:center;color:red">Giá Sản Phẩm :@currentProduct.GiaSanPham</div>
+<div style="font-weight:bold; text-align:center"> Thông Tin:<br /> </div>
+<div> @currentProduct.ThongTin</div>
+<a asp-controller="ShowGioHang" asp-action="buy" asp-route-id="@currentProduct.MaSanPham" style="width:200px;height:50px;margin-bottom:20px" >Thêm Vào Giỏ <img src="~/Images/giohangmauden1.png"/> </a>
+</div>

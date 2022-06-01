@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - demo</title>
+    
+      <link rel="stylesheet" href="~/css/ManHinhChinh.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="dinhdang.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+     <link rel="stylesheet" href="~/css/tuyet.css" />
+     <link rel="stylesheet" href="~/css/StyleSheet.css" />
+     
+</head>
+<body>
+    <div class="snowflakes" aria-hidden="true">
+  <div class="snowflake">❅</div>
+  <div class="snowflake">❆</div>
+  <div class="snowflake">❅</div>
+  <div class="snowflake">❆</div>
+  <div class="snowflake">❅</div>
+  <div class="snowflake">❆</div>
+  <div class="snowflake">❅</div>
+  <div class="snowflake">❆</div>
+  <div class="snowflake">❅</div>
+  <div class="snowflake">❆</div>
+  <div class="snowflake">❅</div>
+  <div class="snowflake">❆</div>
+  <div class="snowflake">❆</div>
+  <div class="snowflake">❆</div>
+  </div>
+
+    <header>
+        <div class="header-top">
+            <h1>
+                <a onclick="location.href='@Url.Action("Index", "Home")'">CHIẾN<em> BLACK</em> </a> 
+            </h1>
+
+        <div id="menudangky">              
+            <a href="#">@Html.ActionLink("Đăng Xuất","giaodien","Dn")<img src=~/Images/dangnhap.png /></a>
+            
+             @*<button onclick="location.href='@Url.Action("Index", "GioHangControllers")'"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Giỏ Hàng</button>*@
+        </div>
+        </div>
+
+         <div class ="chuchay">
+              <marquee  direction="left" > <b class="hd"> 📣 📢  Mọi Thắc Mắc xin Liên Hệ HotLine : 098.56.2468.5 🧡---------------------------------------------------------🔔Địa chỉ : 473 Nguyễn Tri Phương , Dĩ an , Bình Dương💓</b></marquee>
+        </div>
+
+        <div class="container-ef">
+          <div class="text"><span>Chào mừng đến với Shop Chúc Bạn Ngày Mới Vui Vẻ</span></div>
+        </div>
+
+
+     @*   <form action="" class="search-bar">
+  <input type="search" name="search" pattern=".*\S.*" required>
+  <button class="search-btn" type="submit">
+    <span>Search</span>
+  </button>
+</form>*@
+
+
+        <nav>   
+        <ul class="hmenu">
+            <li><a href="#">Điện Thoại</a>
+            <ul class="sub-menu">
+                <li>
+                    <a asp-controller ="ShowSanPham" asp-action="Index" asp-route-MaTheLoai ="1">SamSung</a>
+                </li>
+                    <li ><a asp-controller ="ShowSanPham" asp-action="Index" asp-route-MaTheLoai ="2">LG</a></li>
+                    <li><a asp-controller ="ShowSanPham" asp-action="Index" asp-route-MaTheLoai ="3">Iphone</a></li>
+                    <li><a asp-controller ="ShowSanPham" asp-action="Index" asp-route-MaTheLoai ="4">Oppo</a></li>
+                    <li><a asp-controller ="ShowSanPham" asp-action="Index" asp-route-MaTheLoai ="5">Redmi</a></li>
+            </ul></li>
+            <li><a href="#">LapTop</a>
+                <ul class="sub-menu">
+                    <li><a asp-controller ="ShowSanPham" asp-action="Index" asp-route-MaTheLoai ="6">Dell</a></li>
+                        <li ><a asp-controller ="ShowSanPham" asp-action="Index" asp-route-MaTheLoai ="7">Lenovo</a></li>
+                        <li><a asp-controller ="ShowSanPham" asp-action="Index" asp-route-MaTheLoai ="8">Msi</a></li>
+                        <li><a asp-controller ="ShowSanPham" asp-action="Index" asp-route-MaTheLoai ="9">HP</a></li>
+                        <li><a asp-controller ="ShowSanPham" asp-action="Index" asp-route-MaTheLoai ="10">Asus</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Máy Tính Bảng</a>
+                <ul class="sub-menu">
+                    <li><a asp-controller ="ShowSanPham" asp-action="Index" asp-route-MaTheLoai ="11">Asus</a></li>
+                    <li><a asp-controller ="ShowSanPham" asp-action="Index" asp-route-MaTheLoai ="12">Dell</a></li>
+                    <li><a asp-controller ="ShowSanPham" asp-action="Index" asp-route-MaTheLoai ="13">SamSung</a></li>
+                    <li><a asp-controller ="ShowSanPham" asp-action="Index" asp-route-MaTheLoai ="14">Xiaomi</a></li>
+                    <li><a asp-controller ="ShowSanPham" asp-action="Index" asp-route-MaTheLoai ="15">Lenovo</a></li>
+                    <li><a asp-controller ="ShowSanPham" asp-action="Index" asp-route-MaTheLoai ="16">Masstel</a></li>
+                    <li><a asp-controller ="ShowSanPham" asp-action="Index" asp-route-MaTheLoai ="17">Huawei</a></li>
+                    
+
+                    
+                </ul>
+            </li>
+
+            <li><a href="#">Góp ý</a>
+                <ul class="sub-menu">
+                    <li><a href="https://www.facebook.com/messages/t/100027223480172">Trợ Giúp</a></li>
+                    <li><a href="#">phản hồi</a></li>
+                </ul>
+            </li>
+            <li>
+                <a asp-controller="ShowGioHang" asp-action="Index">Giỏ Hàng <img  src="~/Images/giohang.png" /></a>
+            </li>
+        </ul>
+    </nav>
+    </header>
+    
+    
+    <div class="d-flex">
+ 
+      <article class="flex-grow-1 ">
+        @RenderBody()
+      </article>
+
+        <aside>
+            <div class="thongtin">
+                <ul>
+                   @*// <li>@Html.ActionLink("Thông Tin","Index","ThongTinControllers")</li>*@
+                    <li>@Html.ActionLink("QL Khách Hàng","Index","KhachHangs")</li>
+                    <li>@Html.ActionLink("QL Loại Sản Phẩm","Index","TheLoais")</li>
+                    <li>@Html.ActionLink("QL  Sản Phẩm","Index","SanPhams")</li>
+                   @* <li>@Html.ActionLink("QL  Giỏ Hàng","Index","GioHangs")</li>
+                    <li>@Html.ActionLink("QL  Chi Tiết Giỏ Hàng","Index","ChiTietGioHangs")</li>*@
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        Copyright &copy; 2022 Training Studio
+
+        - Designed by <a rel="nofollow" href="https://www.facebook.com/kho.trai.1422" class="tm-text-link" target="_parent">Minh chiến</a>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
